@@ -1,5 +1,9 @@
 # Object Oriented Programming CMPE-103 LAB EXERCISE No. 1 : Problem 3
 
+import pyfiglet
+border = "-" * 180
+title = ("\n\n" + border + "\n\n" + "\033[95m" + pyfiglet.figlet_format("Vigenere\nCipher\n", justify = "center", font = "isometric1", width = 175) + "\n")
+print(title)
 
 # Convert message and keyword to uppercase
 # Convert the keyword to a numeric key of values 0 - 25

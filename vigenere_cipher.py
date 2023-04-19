@@ -29,7 +29,10 @@ def vigenere_cipher(message, keyword):
         sum_value = (letter_value + key_value) % 26
 
         # Convert sum_val to corresponding letter and add to ciphertext list
+        ciphertext.append(chr(sum_value + 65))
+
     # Join ciphertext list into a string and return
+    return "".join(ciphertext)
     
 # Input message
 # Input keyword

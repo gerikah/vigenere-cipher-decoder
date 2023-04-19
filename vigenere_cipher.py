@@ -26,8 +26,8 @@ def vigenere_cipher(message, keyword):
         key_value = key_values[i % len(keyword)]
 
         # Calculate sum and take mod 26
+        sum_value = (letter_value + key_value) % 26
 
-        
         # Convert sum_val to corresponding letter and add to ciphertext list
     # Join ciphertext list into a string and return
     

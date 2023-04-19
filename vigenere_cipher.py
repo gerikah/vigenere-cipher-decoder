@@ -47,3 +47,5 @@ keyword = input(" ".center(80))
 ciphertext = vigenere_cipher(message_without_spaces, keyword)
 
 # Print the ciphertext
+print(border + "\033[95m" + pyfiglet.figlet_format("\nCiphertext", justify = "center", font = "cybermedium", width = 175))
+print(("\033[7m" + "\n\n\n" + border + ciphertext.center(180) + border + "\n\n\n"))

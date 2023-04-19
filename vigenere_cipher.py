@@ -41,4 +41,9 @@ message = input(" ".center(80))
 message_without_spaces = message.replace(" ", "") #If user input a message with spaces
 
 # Input keyword
+print(border + "\033[95m" + pyfiglet.figlet_format("\nInput Keyword", justify = "center", font = "cybermedium", width = 175))
+keyword = input(" ".center(80))
+
+ciphertext = vigenere_cipher(message_without_spaces, keyword)
+
 # Print the ciphertext

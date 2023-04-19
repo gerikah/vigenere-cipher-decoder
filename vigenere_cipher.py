@@ -9,8 +9,10 @@ def vigenere_cipher(message, keyword):
 # Convert message and keyword to uppercase
     message = message.upper()
     keyword = keyword.upper()
-    
+
 # Convert the keyword to a numeric key of values 0 - 25
+    key_values = [ord(character) - 65 for character in keyword]
+    
 # Empty ciphertext string
     # Loop through message characters
         # Get letter value of current message character

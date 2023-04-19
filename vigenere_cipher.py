@@ -5,7 +5,11 @@ border = "-" * 180
 title = ("\n\n" + border + "\n\n" + "\033[95m" + pyfiglet.figlet_format("Vigenere\nCipher\n", justify = "center", font = "isometric1", width = 175) + "\n")
 print(title)
 
+def vigenere_cipher(message, keyword):
 # Convert message and keyword to uppercase
+    message = message.upper()
+    keyword = keyword.upper()
+    
 # Convert the keyword to a numeric key of values 0 - 25
 # Empty ciphertext string
     # Loop through message characters

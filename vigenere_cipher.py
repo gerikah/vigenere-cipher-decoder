@@ -35,5 +35,10 @@ def vigenere_cipher(message, keyword):
     return "".join(ciphertext)
     
 # Input message
+print(border + "\033[95m" + pyfiglet.figlet_format("\nInput Message", justify = "center", font = "cybermedium", width = 175))
+message = input(" ".center(80))
+
+message_without_spaces = message.replace(" ", "") #If user input a message with spaces
+
 # Input keyword
 # Print the ciphertext
